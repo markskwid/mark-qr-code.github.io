@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Lightgray: hsl(212, 45%, 89%);
+  --Grayishblue: hsl(220, 15%, 55%);
+  --Darkblue: hsl(218, 44%, 22%);
+  --Mainfont: "Outfit", sans-serif;
+}
+
+html {
+  background-color: var(--Lightgray);
+}
+
+* {
+  font-family: var(--Mainfont);
+}
+
+/** typography **/
+
+p {
+  font-size: 13px;
+  color: var(--Grayishblue);
+}
+
+h1 {
+  font-size: 18px;
+  color: var(--Darkblue);
+}
+
+@media screen and (min-width: 0px) and (max-width: 375px) {
+  p {
+    font-size: 14px;
+    color: var(--Grayishblue);
+  }
+
+  h1 {
+    font-size: 20px;
+    color: var(--Darkblue);
+  }
+}
+
+/**layout**/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8em;
+}
+
+.container .box {
+  background-color: var(--White);
+  padding: 0.7em;
+  width: 20%;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container .box .text-container {
+  text-align: center;
+  padding: 0 0.5em;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 375px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 2em;
+  }
+
+  .container .box {
+    background-color: var(--White);
+    padding: 1em;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .container .box .text-container {
+    text-align: center;
+    padding: 0 0.5em;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
