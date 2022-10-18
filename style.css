@@ -24,16 +24,6 @@ html {
 
 /** typography **/
 
-p {
-  font-size: 13px;
-  color: var(--Grayishblue);
-}
-
-h1 {
-  font-size: 18px;
-  color: var(--Darkblue);
-}
-
 @media screen and (min-width: 0px) and (max-width: 375px) {
   p {
     font-size: 14px;
@@ -46,32 +36,19 @@ h1 {
   }
 }
 
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+  p {
+    font-size: 13px;
+    color: var(--Grayishblue);
+  }
+
+  h1 {
+    font-size: 18px;
+    color: var(--Darkblue);
+  }
+}
+
 /**layout**/
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8em;
-}
-
-.container .box {
-  background-color: var(--White);
-  padding: 0.7em;
-  width: 20%;
-  border-radius: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.container .box .text-container {
-  text-align: center;
-  padding: 0 0.5em;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 10px;
-}
 
 @media screen and (min-width: 0px) and (max-width: 375px) {
   .container {
@@ -86,6 +63,33 @@ img {
     padding: 1em;
     width: 100%;
     border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .container .box .text-container {
+    text-align: center;
+    padding: 0 0.5em;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1440px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8em;
+  }
+
+  .container .box {
+    background-color: var(--White);
+    padding: 0.7em;
+    width: 20%;
+    border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 
